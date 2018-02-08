@@ -1,21 +1,48 @@
+#main{
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+
+}
+
 form {
-                width:500px;
+
+                width:300px;
                 margin:50px auto;
 }
 .search {
+
                 padding:8px 15px;
-                background:rgba(50, 50, 50, 0.2);
-                border:0px solid #dbdbdb;
+                background:white;
+                border:2px solid #dbdbdb;
+
 }
 .button {
                 position:relative;
-                padding:6px 15px;
-                left:-8px;
+                padding:8px 15px;
                 border:2px solid #207cca;
                 background-color:#207cca;
                 color:#fafafa;
 }
 .button:hover  {
-                background-color:#fafafa;
+                background-color:grey;
                 color:#207cca;
+}
+
+.gallery {
+  display: inline-block;
+margin-bottom: 10px;
+    padding: 20px;
+    padding-bottom: 20px;
+
+}
+
+.layout {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
 }
