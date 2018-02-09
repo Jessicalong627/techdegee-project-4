@@ -1,25 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
 .main{
   margin: 0 auto;
-  padding: 0;
   justify-content: center;
 
 }
 
 form {
-
                 width:300px;
                 margin:50px auto;
 }
 .search {
-
-                padding:8px 15px;
+                padding:10px 20px;
                 background:white;
                 border:2px solid #dbdbdb;
 
 }
 .button {
                 position:relative;
-                padding:8px 15px;
+                padding:15px 15px;
                 border:2px solid #207cca;
                 background-color:#207cca;
                 color:#fafafa;
@@ -30,21 +31,17 @@ form {
 }
 
 .gallery {
-  display: inline-block;
-margin-bottom: 10px;
+    display: inline-block;
     padding: 20px;
-    padding-bottom: 20px;
 
 }
 
-#layout {
-  margin: 0 auto;
-  width: 70%;
-}
+
 
 li,
 ul
 {
+  margin: 18px;
   text-align: center;
   display: inline-block;
   list-style-type: none;
