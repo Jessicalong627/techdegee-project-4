@@ -37,12 +37,19 @@ margin-bottom: 10px;
 
 }
 
-.layout {
+#layout {
   margin: 0 auto;
   width: 70%;
 }
 
-.gallery img {
+li,
+ul
+{
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+}
+.gallery img  {
     width: 100%;
     height: auto;
 }

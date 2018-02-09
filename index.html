@@ -6,7 +6,7 @@
     <title>My lightbox gallery</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  <link rel="stylesheet" href="js/magnetic-popup.css" type="text/css">
+  <link rel="stylesheet" href="js/lightbox.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 
   </head>
@@ -14,74 +14,70 @@
   <body>
 <div class="main">
 
-
     <form>
-                  <input class= search type="text" placeholder="Search here" required>
-                  <input class=button type="button" value="Search">
-    </form>
+                  <input type="search" name="query" class= "search" />
 
-    <div class="layout">
+</form>
 
-      <a class ="gallery" href="photo_gallery_v3/photos/01.jpg" title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+
+    <ul id="layout">
+
+      <li><a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/01.jpg" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
   <img src="photo_gallery_v3/photos/thumbnails/01.jpg" alt="Hay Bales">
-</a>
+</a></li>
 
-<a class ="gallery" href="photo_gallery_v3/photos/02.jpg" title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+<li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/02.jpg" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
    <img src="photo_gallery_v3/photos/thumbnails/02.jpg" alt="Lake">
-</a>
+</a></li>
 
-<a class ="gallery" href="photo_gallery_v3/photos/03.jpg" title="I hiked to the top of the mountain and got this picture of the canyon and trees below." >
+<li><a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/03.jpg" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below." >
   <img src="photo_gallery_v3/photos/thumbnails/03.jpg" alt="Canyon">
-</a>
+</a></li>
 
 
- <a class ="gallery" href="photo_gallery_v3/photos/04.jpg" title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+ <li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/04.jpg" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
    <img src="photo_gallery_v3/photos/thumbnails/04.jpg" alt="Iceberg">
-</a>
+</a></li>
 
-  <a class ="gallery" href="photo_gallery_v3/photos/05.jpg" title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+  <li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/05.jpg" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
     <img src="photo_gallery_v3/photos/thumbnails/05.jpg" alt="Desert">
-</a>
+</a></li>
 
- <a class ="gallery" href="photo_gallery_v3/photos/06.jpg" title="Fall is coming, I love when the leaves on the trees start to change color.">
+ <li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/06.jpg" data-title="Fall is coming, I love when the leaves on the trees start to change color.">
    <img src="photo_gallery_v3/photos/thumbnails/06.jpg" alt="Fall">
-</a>
+</a></li>
 
-<a class ="gallery" href="photo_gallery_v3/photos/07.jpg" title="I drove past this plantation yesterday, everything is so green!">
+<li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/07.jpg" data-title="I drove past this plantation yesterday, everything is so green!">
   <img src="photo_gallery_v3/photos/thumbnails/07.jpg" alt="Plantation">
-</a>
+</a></li>
 
- <a class ="gallery" href="photo_gallery_v3/photos/08.jpg" title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+ <li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/08.jpg" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
    <img src="photo_gallery_v3/photos/thumbnails/08.jpg" alt="Dunes">
- </a>
+ </a></li>
 
-<a class ="gallery" href="photo_gallery_v3/photos/09.jpg" title="We enjoyed a quiet stroll down this countryside lane.">
+<li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/09.jpg" data-title="We enjoyed a quiet stroll down this countryside lane.">
  <img src="photo_gallery_v3/photos/thumbnails/09.jpg" alt="Countryside">
-</a>
+</a></li>
 
- <a class ="gallery" href="photo_gallery_v3/photos/10.jpg" title="Sunset at the coast! The sky turned a lovely shade of orange.">
+ <li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/10.jpg" data-title="Sunset at the coast! The sky turned a lovely shade of orange.">
    <img src="photo_gallery_v3/photos/thumbnails/10.jpg" alt="Sunset">
- </a>
+ </a></li>
 
-  <a class ="gallery" href="photo_gallery_v3/photos/11.jpg" title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+  <li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/11.jpg" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
     <img src="photo_gallery_v3/photos/thumbnails/11.jpg" alt="Cave">
-  </a>
+  </a></li>
 
- <a class ="gallery" href="photo_gallery_v3/photos/12.jpg" title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+  <li> <a class ="gallery" data-lightbox="roadtrip" href="photo_gallery_v3/photos/12.jpg" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
    <img src="photo_gallery_v3/photos/thumbnails/12.jpg" alt="Bluebells">
-</a>
+</a></li>
+
     </div>
 
-<a class="gallery" href="photo_gallery_v3/photos/12.jpg"></a>
+  </ul>
 
-
-
-
-</div>
-
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="magnific-popup/jquery.magnific-popup.js"></script>></script>
+  <script src="js/lightbox-plus-jquery.js"></script>>
+  <script src="js/jquery.lookingfor.js"></script>
   <script src= "js/main.js"></script>
+
   </body>
 </html>
