@@ -1,4 +1,7 @@
-$(document).ready(function() {
-	$('#search').hideseek();
 
+
+$(document).ready(function() {
+    $('#search').hideseek({
+        attribute: "data-alt"
+    });
 });
